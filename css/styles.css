@@ -1,0 +1,224 @@
+/* Reseteo del archivo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(209, 218, 134);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    color: black;
+    font-family: "Noto Serif Hentaigana", serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container_descripcion_hospital {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    max-width: 900px; 
+    margin: auto; 
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos del header */
+header {
+    background-color: rgb(123, 161, 50);
+    padding: 10px;
+    font-family: "Carter One", serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+/* Estilos del menú */
+.items {
+    display: flex;
+    gap: 20px;
+}
+
+.items a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+
+.items a:hover {
+    font-size: 25px;
+    color: rgb(149, 106, 77);
+}
+
+.form_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(149, 106, 77);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.form_contact button {
+    background-color: rgb(123, 161, 50);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+/* Estilos del footer */
+footer {
+    background-color: rgb(123, 161, 50);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: "Carter One", serif;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer_info {
+    max-width: 400px;
+}
+
+.footer_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 110px;
+}
+
+.footer_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 200px;
+}
+
+.footer_list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.footer_list li img {
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp_button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp_button img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp_button:hover {
+    transform: scale(1.1);
+}
+
+/* Responsivo p/celulares */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .items {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .container_descripcion_hospital {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer_info {
+        text-align: center;
+        margin-left: 0; 
+    }
+
+    .footer_title {
+        margin-left: 0;
+    }
+
+    .footer_list {
+        align-items: center;
+        margin-left: 0;    }
+
+    .footer_list li {
+        justify-content: center;
+    }
+
+    .whatsapp_button {
+        position: bottom;
+    }
+}
