@@ -1,0 +1,19 @@
+/* Variables */
+
+$bodyBgColour: rgb(209, 218, 134);
+$mainTextColour: rgb(0, 0, 0);
+$headerColour: rgb(123, 161, 50);
+$headerAndFooterTextColour: rgb(255, 255, 255);
+$headerHoverTextColour: rgb(149, 106, 77);
+$contactHoverButtonColour: rgb(0, 86, 179);
+$headerAndFooterFont: "Carter One", serif;
+$bodyFont: "Noto Serif Hentaigana", serif;
+
+/* Mixins */
+
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

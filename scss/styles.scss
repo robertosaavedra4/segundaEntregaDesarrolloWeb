@@ -1,0 +1,39 @@
+/*Archivos Parciales*/
+
+@import 'variables';
+@import 'header';
+@import 'menu';
+@import 'footer';
+@import 'responsiveMedia';
+
+
+/* Reseteo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bodyBgColour;
+    height: 100%;
+    margin: 0;
+    @include flex-center(column);
+}
+
+main {
+    color: $mainTextColour;
+    font-family: $bodyFont;
+    margin: 10px;
+}
+
+.container_descripcion_hospital {
+    @include flex-center(row, start, center);
+    gap: 20px;
+    max-width: 900px;
+    margin: 10px auto;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}

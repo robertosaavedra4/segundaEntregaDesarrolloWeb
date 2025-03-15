@@ -1,0 +1,43 @@
+@import 'variables';
+
+/* Menú */
+
+.items {
+    display: flex;
+    gap: 20px;
+}
+
+.items a {
+    color: $headerAndFooterTextColour;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+
+.items a:hover {
+    font-size: 25px;
+    color: $headerHoverTextColour;
+}
+
+.form_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: $contactHoverButtonColour;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.form_contact button {
+    background-color: $headerColour;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form_contact button:hover {
+    background-color: $contactHoverButtonColour;
+}

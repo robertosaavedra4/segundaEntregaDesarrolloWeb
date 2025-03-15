@@ -1,0 +1,47 @@
+@import 'variables';
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .items {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .container_descripcion_hospital {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer_info {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer_title {
+        margin-left: 0;
+    }
+
+    .footer_list {
+        align-items: center;
+        margin-left: 0;
+
+        li {
+            justify-content: center;
+        }
+    }
+}
