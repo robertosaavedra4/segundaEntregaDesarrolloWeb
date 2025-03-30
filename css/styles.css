@@ -38,12 +38,32 @@ header {
   margin-top: 5px;
 }
 
+.perritoHeader {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  left: 0vw;
+  animation: moverIzquierdaDerecha 5s linear infinite;
+  z-index: 0;
+}
+
+@keyframes moverIzquierdaDerecha {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
 /* Variables */
 /* Mixins */
 /* Menú */
 .items {
   display: flex;
   gap: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .items a {
@@ -198,7 +218,7 @@ footer {
 }
 
 body {
-  background-color: rgb(209, 218, 134);
+  background-color: rgb(204, 228, 180);
   height: 100%;
   margin: 0;
   display: flex;
@@ -213,6 +233,15 @@ main {
   margin: 10px;
 }
 
+.gifMain {
+  width: 150px;
+  height: auto;
+  position: bottom;
+  top: 125%;
+  left: 0;
+  animation: moverDerechaIzquierda 10s linear infinite;
+}
+
 .container_descripcion_hospital {
   display: flex;
   flex-direction: row;
@@ -224,6 +253,15 @@ main {
   font-size: 15px;
   line-height: 1.5;
   text-align: justify;
+}
+
+@keyframes moverDerechaIzquierda {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
