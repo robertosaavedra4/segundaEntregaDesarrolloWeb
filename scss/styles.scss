@@ -28,6 +28,15 @@ main {
     margin: 10px;
 }
 
+.gifMain {
+    width: 150px;
+    height: auto;
+    position: bottom;
+    top: 125%;
+    left: 0;
+    animation: moverDerechaIzquierda 10s linear infinite;
+}
+
 .container_descripcion_hospital {
     @include flex-center(row, start, center);
     gap: 20px;
@@ -36,4 +45,9 @@ main {
     font-size: 15px;
     line-height: 1.5;
     text-align: justify;
+}
+
+@keyframes moverDerechaIzquierda {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100vw); }
 }

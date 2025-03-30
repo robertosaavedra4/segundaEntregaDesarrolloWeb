@@ -5,6 +5,8 @@
 .items {
     display: flex;
     gap: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .items a {

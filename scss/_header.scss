@@ -33,3 +33,18 @@ header {
         margin-top: 5px;
     }
 }
+
+.perritoHeader {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 0vw;
+    animation: moverIzquierdaDerecha 5s linear infinite;
+    z-index: 0;
+}
+
+@keyframes moverIzquierdaDerecha {
+    0% { transform: translateX(0vw); }
+    100% { transform: translateX(100vw); }
+}
