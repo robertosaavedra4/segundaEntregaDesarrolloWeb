@@ -17,15 +17,21 @@
 
 body {
     background-color: $bodyBgColour;
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     @include flex-center(column);
+    overflow-x: hidden;
 }
 
 main {
+    display: flex;
+    gap: 20px; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
     color: $mainTextColour;
     font-family: $bodyFont;
     margin: 10px;
+    flex: 1;
 }
 
 .gifMain {
@@ -38,6 +44,16 @@ main {
 }
 
 .container_descripcion_hospital {
+    @include flex-center(row, start, center);
+    gap: 20px;
+    max-width: 900px;
+    margin: 10px auto;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.container_doctores {
     @include flex-center(row, start, center);
     gap: 20px;
     max-width: 900px;
